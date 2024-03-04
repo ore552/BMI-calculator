@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link the css -->
+    <link rel="stylesheet" href="index.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <!-- Header section -->
+    <header class="sectionheader">
+        <h2>BMI Calculator</h2>
+        <p>By Oreofe Olufiranye</p>
+    </header>
+
+    <!-- Calculator section -->
+     <section class="calculatorsection">
+        <div class="calculator">
+            <form>
+                <!-- Make a div for first and last name -->
+                <!--  -->
+                <div>
+                   <label for="">First name</label>
+                   <input type="text" class="firstname" required>
+                </div>
+
+                <div>
+                    <label for="">Last name</label>
+                    <input type="text" class="lastname" required>
+                </div>
+
+                   <!-- and for weight and height -->
+                <div>
+                    <label for="">Height</label>
+                    <!-- Remember to add required when creating the input -->
+                     <input type="text" class="height" required>
+                </div>
+
+                <div>
+                    <label for="">Weight</label>
+                    <input type="text" class="weight" required>
+                </div>
+            </form>
+
+                <!-- Make a div for the button, give it the class name of "btndiv" -->
+            <div class="btndiv">
+                <!-- Add a button to show proceed the calculation -->
+                <button class="btn">Calculate BMI</button>
+            </div>
+
+        </div>
+     </section>
+
+     <!-- Create a result div and give the div a class name of "resultdiv" -->
+     <div class="resultdiv">
+        <!-- Give the paragragph a class name of result -->
+        <p class="result">Your BMI value is </p>
+     </div>
+
+    <!--And the js-->
+    <script src="index.js"></script>
+    
+</body>
+</html>
